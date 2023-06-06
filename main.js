@@ -2,7 +2,7 @@ function Animal(nome) {
     this.nome = nome; 
 
     this.fazerSom = function() {
-        console.log("Rawwwr!");
+        return "Rawwwr";
     }
 }
 
@@ -20,7 +20,7 @@ function Cachorro(nome, raça) {
     }
 
     this.fazerSom = function() {
-        console.log("Au Au!");
+        return "Au Au!";
     }
 }
 
@@ -38,7 +38,7 @@ function Gato(nome, raça) {
     }
 
     this.fazerSom = function() {
-        console.log("Miaaaau");
+        return "Miaaaau!";
     }
 }
 
@@ -49,6 +49,11 @@ const animal3 = new Gato("Gilmar", "Persa");
 console.log(animal1.nome);
 console.log(animal2.nome);
 console.log(animal3.nome);
+
+
+console.log(animal1.fazerSom());
+console.log(animal2.fazerSom());
+console.log(animal3.fazerSom());
 
 animal2.setRaça("Chihuahua");
 
