@@ -21,12 +21,6 @@ let alunos = [
     }
 ]
 
-//for(let i = 0; i < alunos.length; i++) {
-  //  console.log(alunos[i].nome);
-    //console.log(alunos[i].nota);
-//}
-
-
 const alunosQuePassaram = alunos.filter(function(aluno) {
     return aluno.nota >= 6;
 })
